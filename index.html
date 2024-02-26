@@ -150,16 +150,17 @@
   </div>
   <script src="./ppproject/js/animation/navbar.js"></script>
   <script>
-        // Отримуємо кнопку за класом
-        var button = document.querySelector('.error-button');
-        
-        // Додаємо обробник події "click" до кнопки
-        button.addEventListener('click', function() {
-        
-        // Викидаємо помилку (можна вивести специфічний текст помилки)
-        throw new Error('Помилка: Кнопка спричинила помилку.');
-		
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+    // Отримуємо кнопку за класом
+    var button = document.querySelector('.error-button');
+
+    // Додаємо обробник подій для кліку на кнопку
+    button.addEventListener('click', function() {
+        // Виводимо помилку у консоль
+        console.error('Помилка: Натиснута кнопка не працює або призводить до помилки.');
+    });
+});
+
   </script>
 <!-- Code injected by live-server -->
 <script type="text/javascript">
