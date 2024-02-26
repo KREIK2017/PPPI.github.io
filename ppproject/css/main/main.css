@@ -202,7 +202,9 @@ h2 img {
 .contact-form button:hover {
     background-color: #555;
 }
+.buterror {
 
+}
 .social-media {
     display: flex;
     justify-content: center;
