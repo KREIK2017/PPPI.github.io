@@ -203,7 +203,7 @@ h2 img {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: 99%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
