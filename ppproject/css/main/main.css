@@ -187,12 +187,15 @@ h2 img {
 
 
 .contact-form {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-form fieldset {
@@ -202,8 +205,10 @@ h2 img {
 }
 
 .contact-form legend {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
+    text-align: center;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -211,17 +216,32 @@ h2 img {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
+    color: #000000;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 99%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 98%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
     font-size: 1em;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000000;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(54, 54, 54, 0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .contact-form textarea {
@@ -232,17 +252,24 @@ h2 img {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #3b3b3b;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s, transform 0.2s;
+    backdrop-filter: blur(10px);
 }
 
 .contact-form .submit-button:hover {
-    background-color: #0056b3;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
+
+.contact-form .submit-button:active {
+    transform: scale(0.98);
+}
+
 
 .social-media {
     margin: 20px 0px 0px 0px;
