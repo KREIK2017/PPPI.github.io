@@ -13,7 +13,12 @@ header {
     flex-shrink: 0;
     align-items: center;
     justify-content: space-around;
+    background-color: #4d3724a6;
+    margin: 20px 0px 10px 0px ;
 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -24,9 +29,16 @@ main {
 
 footer {
     height: 75px;
+    display: flex;
     flex-shrink: 0;
-    text-align: center;
-    background-color: #977556;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4d3724a6;
+    margin: 20px 0px 10px 0px ;
+    color: #d1d1d1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -48,6 +60,7 @@ h2 img {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
 .container h2 {
@@ -231,10 +244,8 @@ h2 img {
     background-color: #0056b3;
 }
 
-.buterror {
-
-}
 .social-media {
+    margin: 20px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;

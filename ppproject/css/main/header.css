@@ -1,4 +1,7 @@
 
+
+
+
 .layout {
     display: flex;
     flex-direction: column;
@@ -14,7 +17,7 @@
 }
 
 .logo img {
-  width: 50%; 
+  width: 50%;
   height: auto;
   max-width: 325px;
   max-height: 225px;
